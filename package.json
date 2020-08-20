@@ -28,9 +28,12 @@
     "materialize-css": "^1.0.0-rc.2",
     "mongoose": "^5.9.24",
     "nodemon": "^2.0.4",
+    "papaparse": "^5.2.0",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "path-parser": "^6.1.0",
+    "react-bootstrap-table": "^4.3.1",
+    "react-file-reader": "^1.1.4",
     "sendgrid": "^5.2.3",
     "stripe": "^8.81.0"
   }

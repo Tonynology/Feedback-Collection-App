@@ -5,10 +5,23 @@ import { connect } from 'react-redux';
 import formFields from './formFields';
 import { withRouter } from 'react-router-dom';
 import * as actions from '../../actions';
+import formEmailField from './formEmailField';
 
 const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
   const reviewFields = _.map(formFields, ({ name, label }) => {
     return (
+       //every elements has unique key.
+      <div key={name}>
+        <label>{label}</label>
+        <div>
+          {formValues[name]}
+        </div>
+      </div>
+    );
+  })
+  const reviewEmailFields = _.map(formEmailField, ({ name, label }) => {
+    return (
+       //every elements has unique key.
       <div key={name}>
         <label>{label}</label>
         <div>
@@ -22,6 +35,9 @@ const SurveyFormReview = ({ onCancel, formValues, submitSurvey, history }) => {
     <div>
       <h5>Please </h5>
       {reviewFields}
+
+      {reviewEmailFields}
+
       <button
         className="yellow darken-3 white-text btn-flat"
         onClick={onCancel}
