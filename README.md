@@ -17,12 +17,12 @@ The app flow is as follows:
 
 Feature:
 
- Node.js / Express.js API backend
- React / Redux frontend
- Google OAuth authentication
- MongoDB data storage with Mongoose
- Stripe API payments
- SendGrid API for mass emails and tracking
- Basic styling via Materialize CSS
+ - Node.js / Express.js API backend
+ - React / Redux frontend
+ - Google OAuth authentication
+ - MongoDB data storage with Mongoose
+ - Stripe API payments
+ - SendGrid API for mass emails and tracking
+ - Basic styling via Materialize CSS
  
  
